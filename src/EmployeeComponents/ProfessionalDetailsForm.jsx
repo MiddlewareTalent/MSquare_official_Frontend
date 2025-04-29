@@ -95,10 +95,10 @@ const ProfessionalDetailsForm = ({
       newErrors.employmentStatus = "Please enter the employment status";
     }
 
-    const emailPattern = /^[a-zA-Z0-9._%+-]+@middlewaretalents\.com$/;
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@msquireit\.co.uk$/;
     if (!emailPattern.test(formData.corporateEmail)) {
       newErrors.corporateEmail =
-        "Please enter a valid email address with @middlewaretalents.com domain.";
+        "Please enter a valid email address with @msquireit.co.uk domain.";
     }
     return newErrors;
   };
