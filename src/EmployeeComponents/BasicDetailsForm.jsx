@@ -31,7 +31,7 @@ const BasicDetailsForm = ({ onNext, onCancel, formData: initialData = {}, onForm
     const validate = () => {
         const newErrors = {};
         const namePattern = /^[a-zA-Z\s]*$/;
-        const postalCodePattern = /^\d+$/;
+      //  const postalCodePattern = /^\d+$/;
 
         if (!formData.firstName || !namePattern.test(formData.firstName)) {
             newErrors.firstName = "*First name must contain only letters.";
@@ -54,8 +54,8 @@ const BasicDetailsForm = ({ onNext, onCancel, formData: initialData = {}, onForm
         if (!formData.region || !namePattern.test(formData.region)) {
             newErrors.region = "*State / Province must contain only letters.";
         }
-        if (!formData.postalCode || !postalCodePattern.test(formData.postalCode)) {
-            newErrors.postalCode = "*ZIP / Postal code must contain only numbers.";
+        if (!formData.postalCode ) {
+            newErrors.postalCode = "*ZIP / Postal code is required.";
         }
         
 
